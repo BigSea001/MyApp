@@ -35,6 +35,7 @@ import com.dahai.testnotify.R;
     <corners android:radius="6dp" />
     </shape>
     
+    
     CommonDialog dialog = new CommonDialog(MainActivity.this)
     布局在是 common_dialog_layout
  * <p>
