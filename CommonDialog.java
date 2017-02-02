@@ -12,7 +12,31 @@ import android.widget.TextView;
 import com.dahai.testnotify.R;
 
 /**
- * 描述：
+ * 描述：使用方法
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffff" />
+    <stroke
+        android:width="0.8dp"
+        android:color="#ffffff" />
+    <!-- 圆角 -->
+    <corners android:radius="6dp" />
+    </shape>
+    
+    CommonDialog dialog = new CommonDialog(MainActivity.this)
+    布局在是 common_dialog_layout
  * <p>
  * 由 大海 于 2017/2/2 创建
  */
